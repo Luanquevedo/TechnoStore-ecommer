@@ -1,0 +1,49 @@
+@use '../../sass/variables' as *;
+
+.cart {
+    background-color: #3030300a;
+    font-family: $primaryFont;
+    
+    &__itens {
+        display: flex; /* Exibir os cartões lado a lado */
+        flex-direction: column;
+        flex-wrap: wrap; /* Permitir que os cartões quebrem para a próxima linha quando não houver espaço suficiente */
+        justify-content: center; /* Centralizar os cartões horizontalmente */
+        gap: 20px; /* Espaçamento entre os cartões */
+        margin-top: 50px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        height: 320px;
+        padding: 15px;
+        background-color: white;
+        border: 1px solid none;
+        border-radius: 8px;
+        text-align: center;
+        margin-bottom: 20px; /* Espaçamento inferior entre os cartões */
+
+        h4 {
+            font-size: 15px;
+            font-weight: 400;
+            color: #303030;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 600;
+            color: #303030d7;
+        }
+
+        button {
+            font-size: 30px;
+            border: none;
+            background-color: transparent;
+            color: #0086FF;
+        }
+    }
+}

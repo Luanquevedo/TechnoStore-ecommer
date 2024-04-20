@@ -1,0 +1,27 @@
+@use '../sass/variables' as *;
+
+.header {
+    background-color: #0086FF;
+    display: flex;
+
+    &__link {
+        align-items: center;
+        display: flex;
+        gap: 50px;
+        margin-left: 47%;
+    }
+
+    &__logo {
+        padding: 10px;
+        font-family: $primaryFont;
+        color: white;
+        font-size: 55px;
+    }
+
+    &__linkItem {
+        font-family: $primaryFont;
+        font-size: 20px;
+        color: white; /* Remove a cor padrão do link */
+        text-decoration: none; /* Remove a decoração de texto padrão do link */
+    }
+}
